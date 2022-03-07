@@ -1,0 +1,130 @@
+# Install extension "REST Client" of VS Code before use this
+
+
+### Home page
+POST http://localhost:5000/
+
+### Get all categories ordered by ascending name order
+POST http://localhost:5000/categories
+### Create new Category (Just for Admins)
+POST http://localhost:5000/categories/new
+Content-Type: application/json
+
+{
+    "categoryName": "Vincent Stories"
+}
+
+
+### Get all favorite categories of a user by descending addition date
+POST http://localhost:5000/user/100/categories
+### Add a favorite category to a user
+POST http://localhost:5000/user/100/category
+Content-Type: application/json
+
+{
+    "categoryId": 3
+}
+### Remove a favorite category from a user
+DELETE http://localhost:5000/user/100/category/3
+### Filter users by search value
+POST http://localhost:5000/user/filter
+Content-Type: application/json
+
+{
+    "filter": "Tristan"
+}
+### Get all contacts of User
+POST http://localhost:5000/user/contacts
+Content-Type: application/json
+
+{
+    "userId": 2
+}
+### Delete contact of friend
+POST http://localhost:5000/user/contacts/delete
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "contactId": 41
+}
+### Create contact of friend
+POST http://localhost:5000/user/contacts/create
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "contactId": 33
+}
+
+### Create new Post
+POST http://localhost:5000/post/create
+Content-Type: application/json
+
+{
+    "categoryId": [3, 5, 7],
+    "postTitle": "New Post 11",
+    "postContent": "Lorem Porem 11"
+}
+### Get Users Posts
+POST http://localhost:5000/getuserposts
+Content-Type: application/json
+
+{
+    "userId": 1
+}
+### Get all posts by order of creation with offset=request and limit=10
+POST http://localhost:5000/latestposts
+Content-Type: application/json
+
+{
+    "offset": 50
+}
+### Get all posts by order of creation and keyword with offset=request and limit=10
+POST http://localhost:5000/postsbykeyword
+Content-Type: application/json
+
+{
+    "filter": "t",
+    "offset": 10
+}
+### Get all posts by order of average note with offset=request and limit=10
+POST http://localhost:5000/bestposts
+Content-Type: application/json
+
+{
+    "offset": 0
+}
+
+### Subscribe
+POST http://localhost:5000/subscribe
+Content-Type: application/json
+
+{
+    "email": "newuser@tester.com",
+    "password": "somePass12345",
+    "firstName": "Tristan",
+    "lastName": "Lucas"
+}
+### Admin credentials:
+### {
+###     "email": "new@mail.com",
+###     "password": "JustForTest123",
+###     "firstName": "Tester",
+###     "lastName": "Testerov"
+### }
+### Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "newuser@tester.com",
+    "password": "somePass12345"
+}
+### Admin credentials
+### {
+###     "email": "admin@admin.com",
+###     "password": "AdminPass"
+### }
+### Logout
+POST http://localhost:5000/logout

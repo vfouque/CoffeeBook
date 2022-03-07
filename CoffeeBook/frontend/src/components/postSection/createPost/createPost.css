@@ -1,0 +1,32 @@
+.createPostGlobal {
+  box-sizing: border-box;
+  border: 1px solid #e4e6eb;
+}
+.selectPost:focus {
+  box-shadow: none;
+  border: 1px solid #e4e6eb;
+}
+.selectPost {
+  color: rgb(57, 59, 61);
+}
+.selectPost::placeholder {
+  color: rgb(57, 59, 61);
+}
+.btnSubmitFormPost {
+  color: #e4e6eb;
+
+  border: 1px solid #e4e6eb;
+}
+.btnSubmitFormPost:hover {
+  color: #e4e6eb;
+}
+.btnSubmitFormPost:focus {
+  box-shadow: none;
+}
+.btnFormCreateForm button {
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+.btnFormCreateForm button:first-child {
+  margin-right: 25px;
+}

@@ -1,0 +1,39 @@
+.imgProfile {
+  border-radius: 50%;
+  margin: 15px 25px 10px 15px;
+}
+.imgProfile span {
+  margin-right: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #e4e6eb;
+}
+.parameter {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  position: relative;
+  top: -80px;
+  right: 5px;
+}
+.parameter svg {
+  width: 30px;
+  height: 30px;
+}
+
+.gearAppearance {
+  color: rgb(239 168 62);
+}
+.gearAppearance:hover,
+.gearAppearance:active {
+  color: rgb(129, 130, 133);
+}
+.dropdown-menu.menuParameter {
+  margin: 0px 0px 0px -146px !important;
+}
+.menuParameter svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

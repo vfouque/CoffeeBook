@@ -1,0 +1,33 @@
+.logoLogin {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 35px 12px 0px;
+    margin-bottom: 10px;
+    height: 120px;
+}
+.btnLogin {
+    border: 1px solid white;
+    background-color: white;
+    color: #504d4d;
+}
+.btnLogin:hover {
+    color: #ffffff;
+    background-color: #1c1e21;
+    border: 1px solid #1c1e21;
+}
+.sectionLogin {
+  background-color: #504d4d;
+  padding-top: 40px;
+}
+.alertDuplicate {
+  position: absolute;
+  top: 14px;
+  text-align: center;
+}
+.btnSubscribe {
+    color: #36220f;
+    background-color: #e8bc37;
+}
+.btnSubscribe:hover {
+    background-color: #36220f;
+    color: #e8bc37;
+}

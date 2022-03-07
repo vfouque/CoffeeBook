@@ -1,0 +1,42 @@
+.dataProfile{
+    background-color: #504d4d;
+    font-size: 20px;
+    color:#212529;
+    
+
+}
+.dataProfile button{
+    color:#212529;
+    background-color: rgb(239 168 62);
+    padding:10px 5px;
+    border-radius: 8px;
+    margin:0 auto;
+    max-width:100%
+}
+.dataProfile p{
+    color:rgb(240, 242, 247);
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.fieldName{
+    display: flex;
+    justify-content: space-between;
+}
+.fieldName input{
+     border:1px solid #504d4d;
+     border-radius: 8px;
+     padding: 8px 15px;
+     margin-bottom: 20px;
+}
+.fieldName input:focus-visible{
+    border:none;
+}
+.fieldName input::placeholder{
+    text-align: left;   
+}
+input.inputPwd::placeholder{
+    text-align: center;
+}

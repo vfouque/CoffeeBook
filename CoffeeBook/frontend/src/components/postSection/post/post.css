@@ -1,0 +1,31 @@
+.inputPost::placeholder{
+  /* background-color: rgb(57, 59, 61);*/
+   color:#e4e6eb;
+}
+.inputPost, .inputPost:focus{
+   background-color: rgb(57, 59, 61);
+   color:#e4e6eb
+}
+.inputPost:focus{
+   background-color: rgb(83, 83, 83);
+   border-color:#ced4da;
+   box-shadow:none;
+   color:#e4e6eb;
+   
+}
+.w40{
+   width:40%;
+}
+.addPost{
+   line-height: 39px;
+   border:1px solid #ced4da;
+   border-radius:10px; 
+}
+.addPost svg{
+   vertical-align: bottom;
+}
+.addPost span{
+   margin-left:5px;
+   font-size: 20px;
+   line-height: 25px;
+}

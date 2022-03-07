@@ -1,0 +1,10 @@
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height:120px;
+}
